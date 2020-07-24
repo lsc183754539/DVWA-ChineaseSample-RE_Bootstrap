@@ -1,5 +1,9 @@
 DAMN VULNERABLE WEB APPLICATION
 =======================
+v0.11(2020-7-24 Bootstrap-rewirte-ChineaseSimple)
+======
++ rewrite by Bootstarp
++ translate English to Chinease
 
 v1.10 (*Not Yet Released)
 ======

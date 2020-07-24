@@ -15,6 +15,8 @@ if( isset( $_POST[ 'Submit' ]  ) ) {
 	}
 
 	// Feedback for the end user
+	$cmd=iconv("gbk", "UTF-8", $cmd);	//修复中文Windows系统GBK编码乱码问题，转换为UTF-8
+
 	$html .= "<pre>{$cmd}</pre>";
 }
 

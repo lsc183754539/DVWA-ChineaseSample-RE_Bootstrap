@@ -81,7 +81,7 @@ echo "
 
 	<br />
 
-	<p><img src=\"" . DVWA_WEB_PAGE_TO_ROOT . "dvwa/images/login_logo.png\" /></p>
+
 
 	<br />
 

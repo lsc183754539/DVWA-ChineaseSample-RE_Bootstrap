@@ -1,47 +1,47 @@
 <?php
 
-# If you are having problems connecting to the MySQL database and all of the variables below are correct
-# try changing the 'db_server' variable from localhost to 127.0.0.1. Fixes a problem due to sockets.
-#   Thanks to @digininja for the fix.
+# 如果您在连接MySQL数据库时遇到问题，并且以下所有变量均正确无误
+# 尝试将'db_server'变量从localhost更改为127.0.0.1
+# 解决了由于套接字引起的问题。
 
-# Database management system to use
+# 使用的数据库管理系统
 $DBMS = 'MySQL';
-#$DBMS = 'PGSQL'; // Currently disabled
+#$DBMS = 'PGSQL'; // 因兼容问题，目前已停用
 
-# Database variables
-#   WARNING: The database specified under db_database WILL BE ENTIRELY DELETED during setup.
-#   Please use a database dedicated to DVWA.
+# 数据库变量
+#   警告：在安装过程中，将完全删除db_database下指定的数据库。
+#   请使用Mysql数据库。
 #
-# If you are using MariaDB then you cannot use root, you must use create a dedicated DVWA user.
-#   See README.md for more information on this.
+# 如果使用的是MariaDB，则不能使用root，必须使用创建专用的TSWA用户。
+#   更多相关信息请查看README.md文件
 $_DVWA = array();
 $_DVWA[ 'db_server' ]   = '127.0.0.1';
 $_DVWA[ 'db_database' ] = 'dvwa';
 $_DVWA[ 'db_user' ]     = 'dvwa';
-$_DVWA[ 'db_password' ] = 'p@ssw0rd';
+$_DVWA[ 'db_password' ] = 'password';
 
-# Only used with PostgreSQL/PGSQL database selection.
+# 仅用于PostgreSQL / PGSQL数据库时选择。
 $_DVWA[ 'db_port '] = '5432';
 
-# ReCAPTCHA settings
-#   Used for the 'Insecure CAPTCHA' module
-#   You'll need to generate your own keys at: https://www.google.com/recaptcha/admin
-$_DVWA[ 'recaptcha_public_key' ]  = '';
-$_DVWA[ 'recaptcha_private_key' ] = '';
+# 验证码设置
+#   用于“不安全的验证码”模块
+#   您需要在以下网址生成自己的密钥：https://www.google.com/recaptcha/admin
+$_DVWA[ 'recaptcha_public_key' ]  = '6LdJJlUUAAAAAH1Q6cTpZRQ2Ah8VpyzhnffD0mBb';
+$_DVWA[ 'recaptcha_private_key' ] = '6LdJJlUUAAAAAM2a3HrgzLczqdYp4g05EqDs-W4K';
 
-# Default security level
-#   Default value for the security level with each session.
-#   The default is 'impossible'. You may wish to set this to either 'low', 'medium', 'high' or impossible'.
-$_DVWA[ 'default_security_level' ] = 'impossible';
+# 默认安全等级
+#   每个会话的安全级别的默认值。
+#   默认值为'low'。 您可能希望将其设置为'low','medium' 'high' 或 'impossible'。
+$_DVWA[ 'default_security_level' ] = 'low';
 
-# Default PHPIDS status
-#   PHPIDS status with each session.
-#   The default is 'disabled'. You can set this to be either 'enabled' or 'disabled'.
+# 默认PHPIDS状态
+#   每个会话的PHPIDS状态。
+#   默认为“禁用”。 您可以将其设置为“启用”或“禁用”。
 $_DVWA[ 'default_phpids_level' ] = 'disabled';
 
-# Verbose PHPIDS messages
-#   Enabling this will show why the WAF blocked the request on the blocked request.
-#   The default is 'disabled'. You can set this to be either 'true' or 'false'.
-$_DVWA[ 'default_phpids_verbose' ] = 'false';
+# 详细的PHPIDS消息
+#   启用此选项将显示web应用防火墙为什么阻止了该请求。
+#   默认值为“ true”。 您可以将其设置为“ true”或“ false”。
+$_DVWA[ 'default_phpids_verbose' ] = 'true';
 
 ?>

@@ -11,48 +11,27 @@ $page[ 'page_id' ] = 'about';
 
 $page[ 'body' ] .= "
 <div class=\"body_padded\">
-	<h2>About</h2>
-	<p>Version " . dvwaVersionGet() . " (Release date: " . dvwaReleaseDateGet() . ")</p>
-	<p>Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goals are to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment</p>
-	<p>The official documentation for DVWA can be found <a href=\"docs/DVWA_v1.3.pdf\">here</a>.</p>
-	<p>All material is copyright 2008-2015 RandomStorm & Ryan Dewhurst.</p>
+	<h2>关于</h2>
+	<p>版本 " . dvwaVersionGet() . " (Release date: " . dvwaReleaseDateGet() . ")</p>
+	<p>TSWA(TaiShan Web Application)PHP / MySQL Web应用程序。它的主要目标是帮助安全专业人员在法律环境中测试他们的技能和工具，帮助网络开发人员更好地理解保护Web应用程序的过程，并帮助教师/学生在课堂环境中教授/学习Web应用程序的安全性。</p>
+	<p>DVWA的官方文档 <a href=\"docs/DVWA_v1.3.pdf\">DVWA_v1.3.pdf</a>.</p>
 
-	<h2>Links</h2>
+	<h2>链接</h2>
 	<ul>
-		<li>Homepage: " . dvwaExternalLinkUrlGet( 'http://www.dvwa.co.uk/' ) . "</li>
-		<li>Project Home: " . dvwaExternalLinkUrlGet( 'https://github.com/RandomStorm/DVWA' ) . "</li>
-		<li>Bug Tracker: " . dvwaExternalLinkUrlGet( 'https://github.com/RandomStorm/DVWA/issues' ) . "</li>
-		<li>Souce Control: " . dvwaExternalLinkUrlGet( 'https://github.com/RandomStorm/DVWA/commits/master' ) . "</li>
-		<li>Wiki: " . dvwaExternalLinkUrlGet( 'https://github.com/RandomStorm/DVWA/wiki' ) . "</li>
+		<li>主页: " . dvwaExternalLinkUrlGet( 'http://www.dvwa.co.uk/' ) . "</li>
+		<li>项目主页: " . dvwaExternalLinkUrlGet( 'https://github.com/RandomStorm/DVWA' ) . "</li>
+		<li>错误追踪: " . dvwaExternalLinkUrlGet( 'https://github.com/RandomStorm/DVWA/issues' ) . "</li>
+		<li>源代码控制: " . dvwaExternalLinkUrlGet( 'https://github.com/RandomStorm/DVWA/commits/master' ) . "</li>
+		<li>百科: " . dvwaExternalLinkUrlGet( 'https://github.com/RandomStorm/DVWA/wiki' ) . "</li>
 	</ul>
 
-	<h2>Credits</h2>
-	<ul>
-		<li>Brooks Garrett: " . dvwaExternalLinkUrlGet( 'http://brooksgarrett.com/','www.brooksgarrett.com' ) . "</li>
-		<li>Craig</li>
-		<li>g0tmi1k: " . dvwaExternalLinkUrlGet( 'https://blog.g0tmi1k.com/','g0tmi1k.com' ) . "</li>
-		<li>Jamesr: " . dvwaExternalLinkUrlGet( 'https://www.creativenucleus.com/','www.creativenucleus.com' ) . " / " . dvwaExternalLinkUrlGet( 'http://www.designnewcastle.co.uk/','www.designnewcastle.co.uk' ) . "</li>
-		<li>Jason Jones: " . dvwaExternalLinkUrlGet( 'http://www.linux-ninja.com/','www.linux-ninja.com' ) . "</li>
-		<li>RandomStorm: " . dvwaExternalLinkUrlGet( 'https://www.randomstorm.com/','www.randomstorm.com' ) . "</li>
-		<li>Ryan Dewhurst: " . dvwaExternalLinkUrlGet( 'https://www.dewhurstsecurity.com/','www.dewhurstsecurity.com' ) . "</li>
-		<li>Shinkurt: " . dvwaExternalLinkUrlGet( 'http://www.paulosyibelo.com/','www.paulosyibelo.com' ) . "</li>
-		<li>Tedi Heriyanto: " . dvwaExternalLinkUrlGet( 'http://tedi.heriyanto.net/','tedi.heriyanto.net' ) . "</li>
-		<li>Tom Mackenzie: " . dvwaExternalLinkUrlGet( 'https://www.tmacuk.co.uk/','www.tmacuk.co.uk' ) . "</li>
-	</ul>
-	<ul>
-		<li>PHPIDS - Copyright (c) 2007 " . dvwaExternalLinkUrlGet( 'http://github.com/PHPIDS/PHPIDS', 'PHPIDS group' ) . "</li>
-	</ul>
+	
+	<h2>授权</h2>
+	<p>TSWA是免费软件：您可以根据GNU[自由软件基金会（许可的版本3）或（您可以选择）任何更高版本]发布的GNU通用公共许可的条款进行重新分发、修改，</p>
+	<p>DVWA发行版中真诚地包含PHPIDS库。 在没有DVWA团队支持的情况下提供了PHPIDS的操作。 根据以下许可 <a href=\"" . DVWA_WEB_PAGE_TO_ROOT . "instructions.php?doc=PHPIDS-license\">单独的条款</a> DVWA代码。</p>
 
-	<h2>License</h2>
-	<p>Damn Vulnerable Web Application (DVWA) is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.</p>
-	<p>The PHPIDS library is included, in good faith, with this DVWA distribution. The operation of PHPIDS is provided without support from the DVWA team. It is licensed under <a href=\"" . DVWA_WEB_PAGE_TO_ROOT . "instructions.php?doc=PHPIDS-license\">separate terms</a> to the DVWA code.</p>
-
-	<h2>Development</h2>
-	<p>Everyone is welcome to contribute and help make DVWA as successful as it can be. All contributors can have their name and link (if they wish) placed in the credits section. To contribute pick an Issue from the Project Home to work on or submit a patch to the Issues list.</p>
-</div>\n";
+	<h2>开发</h2>
+	<p>欢迎每个人为DVWA尽最大的努力做出贡献和帮助。 所有贡献者的姓名和链接（如果愿意）都可以放在“积分”部分中。 要做出贡献，请从Project Home中选择一个Issue进行处理，或将补丁提交到Issues列表。</p></div>\n";
 
 dvwaHtmlEcho( $page );
 
